@@ -1,0 +1,163 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>WebCtalogAPK Home</title>
+        <link rel="shortcut icon" type="image/x-icon" href="assets/images/v2logo.png"/>
+
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/css/bootstrap-theme.min.css" rel="stylesheet">
+
+        <link href="assets/css/owl.carousel.css" rel="stylesheet">
+        <link href="assets/css/owl.theme.default.min.css" rel="stylesheet">
+
+        <link href="assets/css/magnific-popup.css" rel="stylesheet">
+
+        <link href="assets/css/style.css" rel="stylesheet">
+
+        <script src="calculationho.js"></script>
+    </head>
+    <body>
+        <div id="menu-item" class="menu-item hide-menu">
+            <div class="container">
+                <ul>
+                    <a href="WCAPK.html"><li>главная</li></a>
+                    <a href="WCAPK.html" href="#about"><li>о нас</li></a>
+                    <a href="WCAPK.html"><li>Советы от нас</li></a>
+                    <a href="WCAPK.html"><li>Товары</li></a>
+                    <a href="WCAPK.html"><li>Наши сотрудники</li></a>
+                    <a href="WCAPK.html"><li>Связь с нами</li></a>
+                    <a href="WCAPK.html"><li>поддержка</li></a>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <header class="bg-img header">
+                <nav class="navbar navbar-default navbar-vira">
+                    <div class="container">
+                        <div class="navigation-bar">
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <div class="logo">
+                                        <a href="index.html"><span class="fa fa-viacoin"></span></a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <div class="menu m">
+                                        <a href="#"><span class="ion-navicon _ion-android-menu"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <div class="container">
+                    <div class="row">
+                        <div class="intro-box">
+                            <div class="intro">
+                                <h1>Alex Professional Paints</h1>
+                                <p>Компания производство краски</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+          <p align="center">  <img class="img-responsive" src="C:\Users\Пользователь\Documents\WCAPK\assets\images\home.jpg"></p><br>
+            <table class="tb" align="center" cellspacing="5px" cellpadding="20px" width="1520" height="300">
+                <tr align="center" class="hwd">
+                    <td>ДОМ</td>
+                    <td class="br"></td>
+                    <td>ОКНА</td>
+                    <td class="br"></td>
+                    <td >ДВЕРИ</td>
+                </tr>
+                <tr align="center">
+                    <td>Укажите высоту стен </td>
+                    <td class="br"><input type="text" placeholder="метры" id="hohwall" oninput="Sfull()"></td>
+                    <td>Укажите высоту окон </td>
+                    <td class="br"><input type="text" placeholder="метры" id="hohwin" oninput="Sfull()"></td>
+                    <td>Укажите высоту дверей </td>
+                    <td><input type="text" placeholder="метры" id="hohdoor" oninput="Sfull()"></td>
+                </tr>
+                <tr align="center">
+                    <td>Укажите ширину стен </td>
+                    <td class="br"><input type="text" placeholder="метры" id="howwall" oninput="Sfull()"></td>
+                    <td>Укажите ширину окон </td>
+                    <td class="br"><input type="text" placeholder="метры" id="howwin" oninput="Sfull()"></td>
+                    <td>Укажите ширину дверей </td>
+                    <td><input type="text" placeholder="метры" id="howdoor" oninput="Sfull()"></td>
+                </tr>
+                <tr align="center">
+                    <td>Укажите кол-во стен </td>
+                    <td class="br"><input type="text" placeholder="штук(а)" id="hocwall" oninput="Sfull()"></td>
+                    <td>Укажите кол-во окон </td>
+                    <td class="br"><input type="text" placeholder="штук(а)" id="hocwin" oninput="Sfull()"></td>
+                    <td>Укажите кол-во дверей </td>
+                    <td><input type="text" placeholder="штук(а)" id="hocdoor" oninput="Sfull()"></td>
+                </tr>
+            </table>
+            <table class="otv" align="center" width="1520" height="150">
+                <tr>
+                    <td>Общая площадь поверхности</td>
+                    <td><label id="hoSfull">m"</label></td>
+                    <td>Окрашеваеная площадь порехности</td>
+                    <td><label id="hoSPaint">m"</label></td>
+                </tr>
+                <tr>
+                    <td>Выберите товар</td>
+                    <td>
+                        <select name="example" id="hopaint" onchange="expenditure()">
+                            <option value="A">GALVAPLAST</option>
+                            <option value="B">ACRYL FASADE</option>
+                            <option value="C">BATILITH</option>
+                            <option value="D">VERSAFIX E</option>
+                            <option value="E">VERSAPLUS S</option>
+                        </select>
+                    </td>
+                    <td>Количество банок краски</td>
+                    <td><label id="quantity">шт</label></td>
+                </tr>
+            </table> 
+            <p align="right">
+                <input type="button" value="Очистить поля" id="reset1" onclick="clear2()">   
+            </p>
+             <footer class="footer">
+                <div class="container">
+                <h2 class="mt80">Остались вопросы?</h2>
+                <form class="mb80">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control"  placeholder="ФИО">
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="col-sm-12">
+                            <textarea class="form-control" rows="8" placeholder="Сообщение"></textarea>
+                        </div>
+                        <div class="col-sm-12">
+                            <button type="submit" class="btn vira-btn mr60">Отправить</button>
+                            <button type="reset" class="btn vira-btn">Сброс</button>
+                        </div>
+                    </div>
+                </form>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p>Production by Bylavin company<span class="fa fa-heart"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <script src="assets/js/jquery-3.1.1.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <script src="https://use.fontawesome.com/55b73bf748.js"></script>
+        <script src="assets/js/jquery.magnific-popup.js"></script>
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>
